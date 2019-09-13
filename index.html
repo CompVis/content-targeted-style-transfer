@@ -1,0 +1,361 @@
+<!DOCTYPE HTML>
+<!--
+  Based on
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117339330-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-117339330-1');
+    </script>
+
+		<title>A Content Transformation Block For Image Style Transfer
+      Generation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="landing">
+
+		<!-- Banner -->
+			<section id="banner">
+        <h2>A Content Transformation Block<br/> for Image Style Transfer <br/>
+	</h2>
+        <p>
+        <a href="https://www.linkedin.com/in/dmitry-kotovenko-564b4a12/">Dmytro Kotovenko</a>, 
+        <a href="https://asanakoy.github.io/">Artsiom Sanakoyeu</a>,
+        <a href="https://www.linkedin.com/in/pingchuan-ma-492543156/">Pingchuan Ma</a>,
+        <a href="https://www.linkedin.com/in/sabine-lang-a74a5714a/">Sabine Lang</a>,
+
+        <a href="https://hci.iwr.uni-heidelberg.de/Staff/bommer">Bj&ouml;rn Ommer</a><br/>
+        <a href="https://www.iwr.uni-heidelberg.de/">IWR, Heidelberg University</a><br/>
+        <a href="http://cvpr2019.thecvf.com/">CVPR 2019</a></p>
+			</section>
+
+			<!-- One -->
+				<section id="abstract" class="wrapper style2 special">
+					<div class="container 75%">
+						<div class="row 200%">
+							<div class="6u 12u$(medium) vert-center">
+                  <div class="container 25%">
+                    <div class="image fit captioned align-center">
+                      <a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Kotovenko_A_Content_Transformation_Block_for_Image_Style_Transfer_CVPR_2019_paper">
+                        <img src="images/paper.jpg" alt="" />
+                      </a>
+                      <a href="http://openaccess.thecvf.com/content_CVPR_2019/papers/Kotovenko_A_Content_Transformation_Block_for_Image_Style_Transfer_CVPR_2019_paper">Paper</a>
+                      <div class="headerDivider"></div>
+                      <a href="images/ct-st.bib">BibTeX</a>
+                      <div class="headerDivider"></div>
+                      <a href="https://github.com/CompVis/content-targeted-style-transfer">GitHub</a>
+		      <div class="headerDivider"></div>
+                      <a href="images/poster.pdf">Poster</a>
+                    </div>
+                  </div>
+							</div>
+							<div class="6u$ 12u$(medium)">
+                <h1>Abstract</h1>
+                <p>Style transfer has recently received a lot of attention, since it allows to study fundamental challenges in image understanding and synthesis. Recent work has significantly improved the representation of color and texture and computational speed and image resolution. The explicit transformation of image content has, however, been mostly neglected: while artistic style affects formal characteristics of an image, such as color, shape or texture, it also deforms, adds or removes content details. This paper explicitly focuses on a content-and style-aware stylization of a content image. Therefore, we introduce a content transformation module between the encoder and decoder. Moreover, we utilize similar content appearing in photographs and style samples to learn how style alters content details and we generalize this to other class details. Additionally, this work presents a novel normalization layer critical for high resolution image synthesis. The robustness and speed of our model enables a video stylization in real-time and high definition. We perform extensive qualitative and quantitative evaluations to demonstrate the validity of our approach.
+                </p>
+							</div>
+						</div>
+					</div>
+
+
+
+<br/> 
+
+<div align="center">
+<header>
+<font size="4"><b> Our previous work: </b></font>
+  <span><a href="https://compvis.github.io/adaptive-style-transfer/">A Style-Aware Content Loss for Real-time HD Style Transfer</a></span>
+</header>
+<div>
+
+<!--
+<br/> <br/> <br/>
+<div align="center">
+<h1>Our previous work: </h1> <a href="https://compvis.github.io/adaptive-style-transfer/">A Style-Aware Content Loss for Real-time HD Style Transfer</a>
+</div>
+-->
+
+</section>
+
+
+
+
+
+
+<!########################################################################>
+<!############################## MAIN IDEA ###############################>
+<!########################################################################>
+
+				<section id="main_idea" class="wrapper style1">
+					<div class="container">
+						<header class="major vert-center" align="center">
+							<h2>Main Idea</h2>
+						</header>
+
+<div class="row 150%">
+
+
+								<div class="image fit captioned">
+                  <a href="images/approach.jpeg">
+									<img src="images/approach.jpg" alt="" align="center" />
+                  </a>
+
+								</div>
+
+</div>
+
+
+
+
+<!########################################################################>
+<!####################### CONTENT TRANSFORMATION #########################>
+<!########################################################################>
+
+				<section id="content_transformation" class="wrapper style1">
+					<div class="container">
+						<header  align="center">
+							<h2>Content Transformation </h2>
+						</header>
+
+<div align="center">
+
+Effect of the style specific content transformation block <b>	T</b> for a class "person" and style of van Gogh.<br/>
+Only the cropped out regions containing class "person" are visualized. <br/>
+The rightmost column contains magnified patches from the real van Gogh paintings. 
+ 
+</div>
+<br/>
+
+<div class="row 100%">
+
+
+								<div class="image fit captioned">
+                  <a href="images/content_transformation_results.jpg">
+									<img src="images/content_transformation_results.jpg" alt="" align="center" />
+                  </a>
+
+								</div>
+
+</div>
+
+
+
+
+<!########################################################################>
+<!########################## IMAGE STYLIZATIONS ##########################>
+<!########################################################################>
+				<section id="image_stylizations" class="wrapper style2 special">
+					<div class="container">
+						<header class="major vert-center" align="center">
+							<h2>Image Stylizations</h2>
+						</header>
+
+<div class="row 150%">
+<div class="6u 12u$(xsmall)">
+
+								<div class="image fit captioned">
+                  <a href="images/full_size_images/cezanne-1_0_25.jpeg">
+									<img src="images/full_size_images/cezanne-1_0_25.jpeg" alt="" />
+                  </a>
+									<h3 align="center">Cezanne Style</h3>
+								</div>
+</div>
+<div class="6u$ 12u$(xsmall)">
+
+								<div class="image fit captioned">
+                  <a href="images/full_size_images/cezanne-2_0_25.jpeg">
+									<img src="images/full_size_images/cezanne-2_0_25.jpeg" alt="" />
+                  </a>
+									<h3 align="center">Cezanne Style</h3>
+								</div>
+</div>
+</div>
+
+
+
+
+<div class="row 150%">
+<div class="6u 12u$(xsmall)">
+
+								<div class="image fit captioned">
+                  <a href="images/full_size_images/gogh_0_25.jpeg">
+									<img src="images/full_size_images/gogh_0_25.jpeg" alt="" />
+                  </a>
+									<h3 align="center">van Gogh Style</h3>
+								</div>
+</div>
+<div class="6u$ 12u$(xsmall)">
+
+								<div class="image fit captioned">
+                  <a href="images/full_size_images/gogh-1_0_25.jpeg">
+									<img src="images/full_size_images/gogh-1_0_25.jpeg" alt="" />
+                  </a>
+									<h3 align="center">van Gogh Style</h3>
+								</div>
+</div>
+</div>
+
+
+
+<div class="row 150%">
+<div class="6u 12u$(xsmall)">
+
+								<div class="image fit captioned">
+                  <a href="images/full_size_images/vangogh_0_25.jpeg">
+									<img src="images/full_size_images/vangogh_0_25.jpeg" alt="" />
+                  </a>
+									<h3 align="center">van Gogh Style</h3>
+								</div>
+</div>
+<div class="6u$ 12u$(xsmall)">
+
+								<div class="image fit captioned">
+                  <a href="images/full_size_images/vangogh-1_0_25.jpeg">
+									<img src="images/full_size_images/vangogh-1_0_25.jpeg" alt="" />
+                  </a>
+									<h3 align="center">van Gogh Style</h3>
+								</div>
+</div>
+</div>
+
+
+
+
+
+<div class="row 150%">
+<div class="6u 12u$(xsmall)">
+
+								<div class="image fit captioned">
+                  <a href="images/full_size_images/kirchner_0_25.jpeg">
+									<img src="images/full_size_images/kirchner_0_25.jpeg" alt="" />
+                  </a>
+									<h3 align="center">Kirchner Style</h3>
+								</div>
+</div>
+<div class="6u$ 12u$(xsmall)">
+
+								<div class="image fit captioned">
+                  <a href="images/full_size_images/monet_0_25.jpeg">
+									<img src="images/full_size_images/monet_0_25.jpeg" alt="" />
+                  </a>
+									<h3 align="center">Claude Monet Style</h3>
+								</div>
+</div>
+</div>
+
+
+
+
+<div class="row 150%">
+<div class="6u 12u$(xsmall)">
+
+								<div class="image fit captioned">
+                  <a href="images/full_size_images/morisot_0_25.jpeg">
+									<img src="images/full_size_images/morisot_0_25.jpeg" alt="" />
+                  </a>
+									<h3 align="center">Morisot Style</h3>
+								</div>
+</div>
+<div class="6u$ 12u$(xsmall)">
+
+								<div class="image fit captioned">
+                  <a href="images/full_size_images/picasso1_0_25.jpeg">
+									<img src="images/full_size_images/picasso1_0_25.jpeg" alt="" />
+                  </a>
+									<h3 align="center">Picasso Style</h3>
+								</div>
+</div>
+</div>
+
+
+
+
+
+
+<!########################################################################>
+<!################################ VIDEO #################################>
+<!########################################################################>
+
+				<section id="video_stylizations" class="wrapper style1">
+					<div class="container">
+						<header class="major">
+							<h2>Video Stylizations</h2>
+						</header>
+
+            <div  align="center">
+<div class="6u 12u$(xsmall)">
+								<div class="image fit captioned">
+                  <div class="videocontainer">
+                  <iframe src="https://www.youtube.com/embed/mOVKAeQCat8?list=PLhronotcCkVlSLxsQTOMhquB2jYEwKCHL" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="videothing"></iframe>	
+                  </div>
+                  <h3><a
+                      href="https://www.youtube.com/watch?v=mOVKAeQCat8&list=PLhronotcCkVlSLxsQTOMhquB2jYEwKCHL">Video 1</a></h3>
+								</div>
+</div>
+</div>
+<div   align="center">
+<div class="6u 12u$(xsmall)">
+								<div class="image fit captioned">
+                  <div class="videocontainer">
+                  <iframe src="https://www.youtube.com/embed/blLO3hTCeCg?list=PLhronotcCkVlGFRPUmimYqhP6V3ne905q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="videothing"></iframe>
+                  </div>
+                  <h3><a
+                      href="https://www.youtube.com/playlist?list=PLhronotcCkVlGFRPUmimYqhP6V3ne905q">Video 2</a></h3>
+								</div>
+</div>
+</div>
+<div   align="center">
+<div class="6u 12u$(xsmall)">
+								<div class="image fit captioned" >
+                  <div class="videocontainer">
+                  <iframe src="https://www.youtube.com/embed/AJ_nxdI_US0?list=PLhronotcCkVlyieXSc2TBZpdqo2xQ3J4U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="videothing"></iframe>
+                  </div>
+                  <h3><a
+                      href="https://www.youtube.com/playlist?list=PLhronotcCkVlyieXSc2TBZpdqo2xQ3J4U">Video 3</a></h3>
+								</div>
+</div>
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+</section>
+
+
+			<!-- Four -->
+				<section id="acknowledgements" class="wrapper style3 special">
+					<div class="container">
+						<header class="major">
+							<h2>Acknowledgement</h2>
+              <p>This work has been supported by a hardware donation from NVIDIA Corporation. <br/>
+              This page is based on a design by <a href="http://templated.co">TEMPLATED</a>.</p>
+						</header>
+					</div>
+				</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
